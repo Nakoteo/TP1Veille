@@ -9,10 +9,11 @@
     transition: transform 1s;
 }
 .menu {
-    background-color : #aaa;
+    background-color : $couleur_menu;
     text-align: center;
     /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
-    width: 100vw;
+    width: 500px;
+    height: 100%;
     /*Propriété comme item flex - ne peut rétrécir*/
     flex: 1 0 100%;
     /*Contexte flex en colonne pour ses enfants*/
