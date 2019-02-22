@@ -463,6 +463,15 @@ h1, h2, h3, h4 {
 
 h1 {
   text-align: center;
+  border-bottom: 2px solid #1c251c;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+section {
+  background-color: #1f491f;
+  height: 600px;
+  width: 100%;
 }
 
 footer {

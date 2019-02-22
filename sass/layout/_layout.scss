@@ -8,6 +8,16 @@ h1, h2, h3, h4{
 }
 h1{
     text-align: center;
+    border-bottom: 2px solid $couleur_titres;
+    margin:{
+        left: 300px;
+        right: 300px;
+    }
+}
+section{
+    background-color: $couleur_menu;
+    height: 600px;
+    width: 100%;
 }
 footer{
     text-align: center;
