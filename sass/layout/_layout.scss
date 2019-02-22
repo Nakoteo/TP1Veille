@@ -18,8 +18,10 @@ h1{
 }
 section{
     background-color: $couleur_menu;
-    height: 600px;
     width: 100%;
+    &:nth-child(2){
+        padding-bottom: 50px;
+    }
 }
 footer{
     text-align: center;
@@ -29,5 +31,6 @@ footer{
     width: 100%;
 }
 img{
-    width: 230px;
+    width: 20%;
+    min-width: 230px;
 }

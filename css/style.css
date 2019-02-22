@@ -489,8 +489,11 @@ h1 {
 
 section {
   background-color: #1f491f;
-  height: 600px;
   width: 100%;
+}
+
+section:nth-child(2) {
+  padding-bottom: 50px;
 }
 
 footer {
@@ -502,7 +505,8 @@ footer {
 }
 
 img {
-  width: 230px;
+  width: 20%;
+  min-width: 230px;
 }
 
 /*--------------------------------------------------------------
