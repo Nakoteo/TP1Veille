@@ -3,4 +3,20 @@ html, body{
 }
 p{
     color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    max-width: 1000px;
+    text-align: center;
+    padding:{
+        right: 30px;
+        left: 30px;
+        top: 50px;
+    };
+    margin:{
+        left: auto;
+        right: auto;
+    }
+}
+section{
+    text-align: center;
 }
