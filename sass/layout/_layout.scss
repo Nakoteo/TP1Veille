@@ -3,3 +3,6 @@ html, body{
     overflow: hidden;
     background-color: $couleur_site;
 }
+h1, h2, h3, h4{
+    @include fonte_titres;
+}
