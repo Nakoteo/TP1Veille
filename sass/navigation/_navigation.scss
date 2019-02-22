@@ -12,7 +12,7 @@
     background-color : $couleur_menu;
     text-align: center;
     /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
-    width: 500px;
+    width: 400px;
     height: 100%;
     /*Propriété comme item flex - ne peut rétrécir*/
     flex: 1 0 100%;
@@ -22,8 +22,10 @@
     justify-content: center;
     overflow-x: hidden;
     overflow-y: auto;
+    transform: translateX(-100%);
+    transition: 0.6s ease-out;
 }
-#chkBoutonBurger:checked~.global {
+#chkBoutonBurger:checked~.menu {
     transform: translateX(0%);
 }
 #chkBoutonBurger:checked~.boutonBurger {
@@ -37,4 +39,6 @@ a{
     color: $couleur_fonte_menu;
     font-size: 30px;
     text-transform: uppercase;
+    margin: 100px;
+    border-bottom: 1px solid white;
 }

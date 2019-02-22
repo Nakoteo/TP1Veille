@@ -397,8 +397,8 @@ html, body {
   background-color: #23295c;
   text-align: center;
   /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
-  width: 500px;
-  height: 100vh;
+  width: 400px;
+  height: 100%;
   /*Propriété comme item flex - ne peut rétrécir*/
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
@@ -416,9 +416,13 @@ html, body {
           justify-content: center;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
 }
 
-#chkBoutonBurger:checked ~ .global {
+#chkBoutonBurger:checked ~ .menu {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
@@ -437,6 +441,8 @@ a {
   color: #fff;
   font-size: 30px;
   text-transform: uppercase;
+  margin: 100px;
+  border-bottom: 1px solid white;
 }
 
 /*--------------------------------------------------------------

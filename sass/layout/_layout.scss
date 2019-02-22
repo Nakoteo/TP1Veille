@@ -2,6 +2,3 @@ html, body{
     @include maxWidthHeight;
     overflow: hidden;
 }
-global{
-    @include maxWidthHeight;
-}
