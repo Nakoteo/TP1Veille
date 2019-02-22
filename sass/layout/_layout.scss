@@ -1,4 +1,5 @@
 html, body{
     @include maxWidthHeight;
     overflow: hidden;
+    background-color: $couleur_site;
 }
