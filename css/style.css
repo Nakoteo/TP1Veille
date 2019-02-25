@@ -477,7 +477,7 @@ a {
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #eeeeee;
 }
 
@@ -493,6 +493,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
+  margin-top: 70px;
 }
 
 section {
@@ -506,17 +507,24 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  margin-bottom: 80px;
+}
+
+section div:nth-child(1) {
+  margin-bottom: 70px;
 }
 
 section div:nth-child(2) {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 230px 230px 230px 230px;
-      grid-template-columns: 230px 230px 230px 230px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-grid-columns: 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer {
@@ -528,8 +536,7 @@ footer {
 }
 
 img {
-  width: 20%;
-  min-width: 230px;
+  width: 100%;
 }
 
 /*--------------------------------------------------------------
