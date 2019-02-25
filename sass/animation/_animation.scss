@@ -1,0 +1,13 @@
+img{
+    animation-duration: 1s;
+    opacity: 0;
+}
+
+@keyframes opaciteImages {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

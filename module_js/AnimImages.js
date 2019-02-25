@@ -1,22 +1,13 @@
-export class AnimLettre{
-    constructor(lesLettres, elmHeader, finAnim){
-        this.lesLettres = lesLettres;
-        this.elmHeader = elmHeader;
-        this.finAnim= finAnim;
-        this.animerLettres();
+export class AnimImg{
+    constructor(lesImages){
+        this.lesImages = lesImages;
+        this.animerImages();
     }
-    animerLettres(){
-        let elmMot = document.createElement('div');
-        elmMot.classList.add('mot');
-        this.elmHeader.appendChild(elmMot);
+    animerImages(){
         let i = 0;
-        for (let uneLettre of this.lesLettres){
-            let conteneurLettre = document.createElement('div');
-            conteneurLettre.innerHTML = uneLettre;
-            conteneurLettre.style.animationDelay = (i * 0.5) + "s";
-            elmMot.appendChild(conteneurLettre);
-            i += 0.5;
+        for (let uneImage of this.lesImages){
+            uneImage.style.animation = "opaciteImages 2s ease-in " + i + "s forwards";
+            i += 1;
         }
-        this.finAnim();
     }	
 }
