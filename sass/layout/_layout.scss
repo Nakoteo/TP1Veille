@@ -10,7 +10,7 @@ h1{
     text-align: center;
     border-bottom: 2px solid $couleur_titres;
     width: 800px;
-    margin:{
+    margin: {
         left: auto;
         right: auto;
         bottom: 60px;
@@ -19,13 +19,15 @@ h1{
 section{
     background-color: $couleur_menu;
     width: 100%;
-    &:nth-child(2){
-        padding-bottom: 50px;
-    }
     min-height: 600px;
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    div:nth-child(2){
+        display: grid;
+        grid-template-columns: 230px 230px 230px 230px;
+        justify-content: space-around;
+    }
 }
 footer{
     text-align: center;

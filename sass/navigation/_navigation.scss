@@ -3,10 +3,11 @@
     height: 48px;
     width: 48px;
     margin: 1%;
-    display: inline-block;
     cursor: pointer;
     /*Effet de transition sur la rotation*/
     transition: transform 1s;
+    position: fixed;
+    display: block;
 }
 .menu {
     background-color : $couleur_menu;
@@ -19,7 +20,7 @@
     /*Contexte flex en colonne pour ses enfants*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     overflow-x: hidden;
     overflow-y: auto;
     transform: translateX(-100%);
@@ -31,6 +32,7 @@
 }
 #chkBoutonBurger:checked~.boutonBurger {
     transform: rotate(90deg);
+    background: linear-gradient(to bottom, white 0%, white 20%, transparent 20%, transparent 40%, white 40%, white 60%, transparent 60%, transparent 80%, white 80%, white 100%);
 }
 #chkBoutonBurger {
     display: none;
@@ -40,6 +42,10 @@ a{
     color: $couleur_fonte_menu;
     font-size: 30px;
     text-transform: uppercase;
-    margin: 100px;
     border-bottom: 1px solid white;
+    width: 200px;
+    margin: {
+        left: auto;
+        right: auto;
+    }
 }
