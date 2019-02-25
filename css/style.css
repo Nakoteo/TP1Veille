@@ -539,6 +539,22 @@ img {
   width: 100%;
 }
 
+@media only screen and (max-width: 1080px) {
+  section div:nth-child(2) {
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
+    grid-gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  section div:nth-child(2) {
+    -ms-grid-columns: 80%;
+        grid-template-columns: 80%;
+    grid-gap: 20px;
+  }
+}
+
 /*--------------------------------------------------------------
 # animation
 --------------------------------------------------------------*/
