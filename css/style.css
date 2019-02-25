@@ -399,7 +399,7 @@ section {
 
 @media only screen and (max-width: 640px) {
   p {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
@@ -579,7 +579,7 @@ img {
 
 @media only screen and (max-width: 640px) {
   h1 {
-    width: 320px;
+    width: 280px;
     font-size: 25px;
     margin-bottom: 40px;
     margin-top: 50px;

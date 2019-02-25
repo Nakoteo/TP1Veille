@@ -9,6 +9,9 @@ export class AnimLettre{
         for (let uneLettre of this.lesLettres){
             let conteneurLettre = document.createElement('div');
             conteneurLettre.innerHTML = uneLettre;
+            if(uneLettre == " "){
+                conteneurLettre.style.width = "8px";
+            }
             conteneurLettre.style.animation = "opacite 0.4s ease-in " + i + "s forwards";
             this.elmH1.appendChild(conteneurLettre);
             i += 0.1;
