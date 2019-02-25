@@ -409,8 +409,8 @@ section {
 # Navigation
 --------------------------------------------------------------*/
 .boutonBurger {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1f491f), color-stop(20%, #1f491f), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #1f491f), color-stop(60%, #1f491f), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #1f491f), to(#1f491f));
-  background: linear-gradient(to bottom, #1f491f 0%, #1f491f 20%, transparent 20%, transparent 40%, #1f491f 40%, #1f491f 60%, transparent 60%, transparent 80%, #1f491f 80%, #1f491f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#183018), color-stop(20%, #183018), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #183018), color-stop(60%, #183018), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #183018), to(#183018));
+  background: linear-gradient(to bottom, #183018 0%, #183018 20%, transparent 20%, transparent 40%, #183018 40%, #183018 60%, transparent 60%, transparent 80%, #183018 80%, #183018 100%);
   height: 48px;
   width: 48px;
   margin: 1%;
@@ -426,7 +426,7 @@ section {
 }
 
 .menu {
-  background-color: #1f491f;
+  background-color: #183018;
   text-align: center;
   /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
   width: 400px;
@@ -482,6 +482,12 @@ a {
   margin-right: auto;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 640px) {
+  .menu {
+    width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -572,6 +578,8 @@ img {
   h1 {
     width: 320px;
     font-size: 25px;
+    margin-bottom: 40px;
+    margin-top: 50px;
   }
   section div:nth-child(2) {
     -ms-grid-columns: 80%;
