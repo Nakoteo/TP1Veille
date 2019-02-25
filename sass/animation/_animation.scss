@@ -2,8 +2,14 @@ img{
     animation-duration: 1s;
     opacity: 0;
 }
+h1{
+    div{
+        display: inline-block;
+        opacity: 0;
+    }
+}
 
-@keyframes opaciteImages {
+@keyframes opacite {
     from{
         opacity: 0;
     }

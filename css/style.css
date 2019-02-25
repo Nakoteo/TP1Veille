@@ -411,6 +411,7 @@ section {
 .boutonBurger {
   background: -webkit-gradient(linear, left top, left bottom, from(#183018), color-stop(20%, #183018), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(40%, #183018), color-stop(60%, #183018), color-stop(60%, transparent), color-stop(80%, transparent), color-stop(80%, #183018), to(#183018));
   background: linear-gradient(to bottom, #183018 0%, #183018 20%, transparent 20%, transparent 40%, #183018 40%, #183018 60%, transparent 60%, transparent 80%, #183018 80%, #183018 100%);
+  border-radius: 3px;
   height: 48px;
   width: 48px;
   margin: 1%;
@@ -453,6 +454,7 @@ section {
   -webkit-transition: 0.6s ease-out;
   transition: 0.6s ease-out;
   position: fixed;
+  z-index: 30;
 }
 
 #chkBoutonBurger:checked ~ .menu {
@@ -557,6 +559,7 @@ footer {
 
 img {
   width: 100%;
+  border-radius: 3px;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -597,7 +600,12 @@ img {
   opacity: 0;
 }
 
-@-webkit-keyframes opaciteImages {
+h1 div {
+  display: inline-block;
+  opacity: 0;
+}
+
+@-webkit-keyframes opacite {
   from {
     opacity: 0;
   }
@@ -606,7 +614,7 @@ img {
   }
 }
 
-@keyframes opaciteImages {
+@keyframes opacite {
   from {
     opacity: 0;
   }
