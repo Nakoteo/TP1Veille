@@ -20,3 +20,14 @@ p{
 section{
     text-align: center;
 }
+@media only screen and (max-width: 1080px) {
+    p{
+        font-size: 18px;
+        text-align: justify;
+    }
+}
+@media only screen and (max-width: 640px) {
+    p{
+        font-size: 17px;
+    }
+}

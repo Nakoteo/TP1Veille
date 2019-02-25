@@ -33,6 +33,7 @@ section{
         grid-template-columns: 20% 20% 20% 20%;
         grid-gap: 30px;
         justify-content: center;
+        margin-bottom: 60px;
     }
 }
 footer{
@@ -47,7 +48,14 @@ img{
 }
 
 @media only screen and (max-width: 1080px) {
+    h1{
+        width: 580px;
+        font-size: 28px;
+    }
     section{
+        div:nth-child(1){
+            margin-bottom: 20px;
+        }
         div:nth-child(2){
             grid-template-columns: 40% 40%;
             grid-gap: 30px;
@@ -55,6 +63,10 @@ img{
     }
 }
 @media only screen and (max-width: 640px) {
+    h1{
+        width: 320px;
+        font-size: 25px;
+    }
     section{
         div:nth-child(2){
             grid-template-columns: 80%;
